@@ -1,0 +1,12 @@
+# setting up raspberrypi wifi
+
+#1 add blank ssh file to boot directory 
+#2 create wpa_supplicant.conf file in boot directory. 
+          ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+          update_config=1
+          country=GB
+
+          network={
+              ssid="YourSSID"
+              psk="YourPassword"
+          }
